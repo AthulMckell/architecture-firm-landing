@@ -210,7 +210,7 @@ export default function Component() {
                   <Twitter className="w-6 h-6" />
                   <Instagram className="w-6 h-6" />
                 </div>
-                <Button>Read More</Button>
+                {/* <Button>Read More</Button> */}
               </div>
               <div className="md:w-1/2">
               <Image
@@ -253,7 +253,7 @@ export default function Component() {
                   not only captivate the senses but also minimize environmental impact. From energy-efficient systems to
                   the integration of renewable resources, our designs prioritize the well-being of both people and the planet.
                 </p>
-                <Button>Explore Now</Button>
+                {/* <Button>Explore Now</Button> */}
               </div>
             </div>
           </div>
@@ -263,7 +263,7 @@ export default function Component() {
         <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">Archivista</h3>
+              <h3 className="text-lg font-semibold mb-4">TwoArc Studio</h3>
               <p className="text-gray-400">Transforming spaces, shaping futures.</p>
             </div>
             <div>
@@ -281,7 +281,7 @@ export default function Component() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 text-center">
-            <p className="text-gray-400">&copy; 2024 Archivista. All rights reserved.</p>
+            <p className="text-gray-400">&copy; 2024 TwoArc Studio. All rights reserved.</p>
           </div>
         </div>
       </footer>
