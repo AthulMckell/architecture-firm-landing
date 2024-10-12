@@ -30,7 +30,7 @@ export default function Component() {
           <div className="flex h-14 items-center justify-between">
             <div className="flex items-center space-x-4">
               <a className="flex items-center space-x-2" href="/">
-                <span className="font-bold sm:inline-block">Archivista</span>
+                <span className="font-bold sm:inline-block">TwoArc Studio</span>
               </a>
               <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
                 <button onClick={() => scrollToSection('home')} className="transition-colors hover:text-foreground/80 text-foreground/60">
@@ -234,7 +234,7 @@ export default function Component() {
                 inspiration from the natural world, cultural heritage, and the evolving needs of our clients. The result
                 is a portfolio of award-winning designs that seamlessly blend form, function, and sustainability.
               </p>
-              <Button variant="outline">Learn More</Button>
+              {/* <Button variant="outline">Learn More</Button> */}
             </div>
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="md:w-1/2 mb-6 md:mb-0">

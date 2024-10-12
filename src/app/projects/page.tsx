@@ -111,14 +111,11 @@ export default function ProjectsPage() {
           <div className="flex h-14 items-center justify-between">
             <div className="flex items-center space-x-4">
               <a className="flex items-center space-x-2" href="/">
-                <span className="font-bold sm:inline-block">Archivista</span>
+                <span className="font-bold sm:inline-block">TwoArc Studio</span>
               </a>
               <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
                 <button onClick={() => scrollToSection('home')} className="transition-colors hover:text-foreground/80 text-foreground/60">
                   Home
-                </button>
-                <button onClick={() => scrollToSection('approach')} className="transition-colors hover:text-foreground/80 text-foreground/60">
-                  About
                 </button>
                 <button onClick={() => scrollToSection('projects')} className="transition-colors hover:text-foreground/80 text-foreground/60">
                   Projects
