@@ -3,6 +3,7 @@ import { useState, useRef } from 'react'
 import { Button } from "@/components/ui/button"
 import { Facebook, Twitter, Instagram, ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Component() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -35,11 +36,12 @@ export default function Component() {
                 <button onClick={() => scrollToSection('home')} className="transition-colors hover:text-foreground/80 text-foreground/60">
                   Home
                 </button>
-                <button onClick={() => scrollToSection('approach')} className="transition-colors hover:text-foreground/80 text-foreground/60">
-                  About
-                </button>
+               <Link href="/projects"><button  className="transition-colors hover:text-foreground/80 text-foreground/60">
+               Projects
+                </button></Link> 
+                  
                 <button onClick={() => scrollToSection('projects')} className="transition-colors hover:text-foreground/80 text-foreground/60">
-                  Projects
+                  About
                 </button>
                 <button onClick={() => scrollToSection('contact')} className="transition-colors hover:text-foreground/80 text-foreground/60">
                   Contact
