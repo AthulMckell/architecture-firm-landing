@@ -7,6 +7,14 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
 
 // Sample project data
+interface Project {
+  id: number; // or string, depending on your use case
+  title: string;
+  description: string;
+  mainImage: string;
+  images: string[];
+  fullDescription: string;
+}
 const projects = [
   {
     id: 1,
@@ -72,10 +80,10 @@ const projects = [
 
 export default function ProjectsPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [selectedProject, setSelectedProject] = useState(null)
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
-  const openProject = (project) => {
+  const openProject = (project:Project) => {
     setSelectedProject(project)
     setCurrentImageIndex(0)
   }
@@ -85,15 +93,19 @@ export default function ProjectsPage() {
   }
 
   const nextImage = () => {
+    if(selectedProject){
     setCurrentImageIndex((prevIndex) => 
       (prevIndex + 1) % selectedProject.images.length
     )
   }
+  }
 
   const prevImage = () => {
+    if(selectedProject){
     setCurrentImageIndex((prevIndex) => 
       (prevIndex - 1 + selectedProject.images.length) % selectedProject.images.length
     )
+  }
   }
 
   const scrollToSection = (id: string) => {
@@ -239,7 +251,7 @@ export default function ProjectsPage() {
               </DialogHeader>
               <div className="relative">
                 <Image 
-                  src={selectedProject?.images[currentImageIndex]} 
+                   src={selectedProject?.images[currentImageIndex] ?? '/default-image.jpg'}
                   alt={`${selectedProject?.title} - Image ${currentImageIndex + 1}`} 
                   width={700}
                   height={400}
