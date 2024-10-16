@@ -30,7 +30,8 @@ export default function Component() {
           <div className="flex h-14 items-center justify-between">
             <div className="flex items-center space-x-4">
               <a className="flex items-center space-x-2" href="/">
-                <span className="font-bold sm:inline-block">TwoArc Studio</span>
+              <Image src="/images/logoblk.jpg" alt="2Arc Studio Logo" width={24} height={24} />
+                <span className="font-bold sm:inline-block">2Arc Studio</span>
               </a>
               <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
                 <button onClick={() => scrollToSection('home')} className="transition-colors hover:text-foreground/80 text-foreground/60">
@@ -263,7 +264,7 @@ export default function Component() {
         <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">TwoArc Studio</h3>
+              <h3 className="text-lg font-semibold mb-4">TwoArc Studio </h3>
               <p className="text-gray-400">Transforming spaces, shaping futures.</p>
             </div>
             <div>
